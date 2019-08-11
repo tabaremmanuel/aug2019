@@ -1,0 +1,22 @@
+$ff1: 'Montserrat', sans-serif; //Font Family
+$c1: #333333; //color #1
+$c2: #ff0000; //color #2
+$c3: #ffffff; //color #3
+
+@mixin btn($bg: #cccccc, $color: #ffffff,$td: none,$pad: 5px){
+  color:$color;
+  background-color: $bg;
+  text-decoration: $td;
+  padding:$pad
+}
+@mixin btn_{
+  display:inline-block;
+  border-radius: 5px;
+  line-height: normal;
+  transition: ease 0.3s all
+}
+@mixin bs($shadows...){ //box-shadow
+  box-shadow: $shadows;
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+}

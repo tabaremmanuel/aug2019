@@ -1,0 +1,18 @@
+@import 'var';
+body{
+  font:{
+    family: $ff1;
+    size:14px;
+    weight: 400;
+  }
+  color:$c1;
+  background: {color:$c3;}
+}
+a.btn_:hover{
+  @include btn;
+}
+a.btn_{
+  @include bs(1px 2px 0px $c1, 0 0 3px rgba(255,0,0,0.5));
+  @include btn($bg: #ef4127, $color: #ffffff,$pad: 10px);
+  @include btn_;
+}
